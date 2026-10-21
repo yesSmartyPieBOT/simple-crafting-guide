@@ -257,7 +257,6 @@ public final class CraftingGuideScreen extends Screen {
         slot(ctx, 506, 174, 54, true);
         if (selected != null) {
             ctx.drawItem(selected.result(), 525, 193);
-            ctx.drawItemInSlot(textRenderer, selected.result(), 525, 193);
         } else {
             ctx.drawCenteredTextWithShadow(textRenderer, "—", 533, 194, MUTED);
         }
