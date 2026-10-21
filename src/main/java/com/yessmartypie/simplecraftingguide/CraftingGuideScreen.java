@@ -101,14 +101,14 @@ public final class CraftingGuideScreen extends Screen {
                     continue;
                 }
 
-                ItemStack result = resultDisplay.getFirst(parameters).orElse(ItemStack.EMPTY);
+                ItemStack result = resultDisplay.getFirst(parameters);
                 if (result.isEmpty()) {
                     continue;
                 }
 
                 List<ItemStack> ingredients = new ArrayList<>(9);
                 for (SlotDisplay slot : ingredientDisplays) {
-                    ingredients.add(slot.getFirst(parameters).orElse(ItemStack.EMPTY));
+                    ingredients.add(slot.getFirst(parameters));
                 }
                 while (ingredients.size() < 9) {
                     ingredients.add(ItemStack.EMPTY);
