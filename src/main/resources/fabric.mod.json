@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "simple_crafting_guide",
+  "version": "${version}",
+  "name": "Simple Crafting Guide",
+  "description": "A lightweight in-game browser for Minecraft crafting recipes.",
+  "authors": ["yesSmartyPieBOT"],
+  "contact": {
+    "sources": "https://github.com/yesSmartyPieBOT/simple-crafting-guide"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.yessmartypie.simplecraftingguide.SimpleCraftingGuideClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
